@@ -1,45 +1,90 @@
-# Let's create the HTML file locally to share as a downloadable file for the user.
-
-html_content = """
 <!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pijl Bouw & Interieurs - Preview</title>
+    <title>Pijl Bouw & Interieurs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #333;
             color: white;
-            padding: 20px;
+            padding: 1rem;
             text-align: center;
         }
         header img {
             max-width: 150px;
-            margin-bottom: 10px;
         }
         .slider {
             display: flex;
             overflow: hidden;
-            justify-content: center;
-            padding: 20px 0;
+            position: relative;
         }
         .slider img {
-            max-width: 90%;
+            width: 100%;
             height: auto;
-            margin: 0 10px;
         }
         .content {
-            padding: 20px;
+            padding: 2rem;
             text-align: center;
         }
-        .project, .contact {
-            margin: 20px auto;
-           
+        .projects, .contact {
+            padding: 2rem;
+            background-color: white;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo_placeholder.png" alt="Pijl Bouw & Interieurs Logo">
+    <h1>Pijl Bouw & Interieurs</h1>
+    <p>Kwaliteit zie je niet zo snel, maar ervaar je</p>
+</header>
+
+<section class="slider">
+    <img src="photo1_placeholder.jpg" alt="Project 1">
+    <img src="photo2_placeholder.jpg" alt="Project 2">
+</section>
+
+<section class="content">
+    <h2>Welkom bij Pijl Bouw & Interieurs</h2>
+    <p>Wij realiseren hoogwaardige bouw- en interieurprojecten met oog voor detail.</p>
+</section>
+
+<section class="projects">
+    <h2>Projecten</h2>
+    <div class="project">
+        <h3>Canal House Renovatie</h3>
+        <img src="project1_placeholder.jpg" alt="Canal House">
+        <p>Een uniek project waarbij vakmanschap en innovatie samenkomen. <a href="#">Bekijk meer</a></p>
+    </div>
+    <div class="project">
+        <h3>Modern Appartement</h3>
+        <img src="project2_placeholder.jpg" alt="Modern Appartement">
+        <p>Een strak en modern ontwerp met oog voor detail. <a href="#">Bekijk meer</a></p>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Neem contact met ons op via:</p>
+    <p>Email: info@pijlbouw.nl
